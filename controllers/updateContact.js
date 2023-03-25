@@ -47,8 +47,9 @@ function updateContactInCRM(contactId, newEmail, newMobileNumber) {
 
   const axiosConfig = {
     headers: {
-      Authorization: `Token token=${API_KEY}`,
+      'Accept': 'application/json',
       'Content-Type': 'application/json',
+      'Authorization': `Token token=${API_KEY}`,
     },
   };
 

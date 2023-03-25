@@ -32,8 +32,9 @@ async function deleteContactFromCRM(contactId) {
   try {
     const response = await axios.delete(`https://${DOMAIN}/contacts/${contactId}`, {
       headers: {
-        "Content-Type": "application/json",
-        Authorization: `Token token=${API_KEY}`,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization': `Token token=${API_KEY}`,
       },
     });
 

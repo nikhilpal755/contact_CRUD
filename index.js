@@ -2,10 +2,10 @@ import express from 'express'
 import { dbConnection } from './middleware/db.js';
 import morgan from 'morgan';
 import cors from 'cors'
-import { createContact } from './controllers/CreateContact.js';
-import { getContact } from './controllers/GetContact.js';
-import { updateContact } from './controllers/UpdateContact.js';
-import { deleteContact } from './controllers/DeleteContact.js';
+import { createContact } from './controllers/createContact.js';
+import { getContact } from './controllers/getContact.js';
+import { updateContact } from './controllers/updateContact.js';
+import { deleteContact } from './controllers/deleteContact.js';
 
 const app = express();
 const port = 5000;

@@ -37,8 +37,9 @@ async function getContactInCRM(contactId) {
 
   const response = await axios.get(url, {
     headers: {
+      'Accept': 'application/json',
       'Content-Type': 'application/json',
-      Authorization: `Token token=${API_KEY}`,
+      'Authorization': `Token token=${API_KEY}`,
     },
   });
 
